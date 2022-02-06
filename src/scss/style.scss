@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+@import "global";
+.header {
+    color: #fff;
+    margin-bottom: 700px;
+    &__title {
+        padding-top: 30px;
+    }
+}
+
+.weather {
+    &.loading {
+        visibility: hidden;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    &__degrees {
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 100px;
+        margin-right: 50px;
+    }
+    &__info {
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    &__city {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    &__mood-icon {
+        width: 70px;
+        display: block;
+    }
+    &__details {
+        color: #fff;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 400px;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        &-info {
+            padding: 0px 0 0 50px;
+            &-title {
+                margin-bottom: 50px;
+            }
+        }
+        &-search {
+            margin-bottom: 100px;
+        }
+        &-input {
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 60px 0 0 50px;
+            padding: 10px;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        &-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            border-bottom-left-radius: 10px;
+        }
+        &-btn img {
+            font-size: 24px;
+            width: 30px;
+            height: 30px;
+        }
+        &-item {
+            color: rgba(255, 2555, 255, 0.5);
+        }
+        &-item+&-item {
+            margin-top: 70px;
+        }
+        &-list.loading {
+            visibility: hidden;
+        }
+    }
+}

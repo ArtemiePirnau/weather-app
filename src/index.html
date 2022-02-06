@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <!-- <a class="header__icon" href="#">
+                    <img src="images/search.svg" alt="search icon">
+                </a> -->
+                <h3 class="header__title">
+                    Weather App
+                </h3>
+            </div>
+        </div>
+    </header>
+    <div class="weather loading">
+        <div class="container">
+            <div class="weather__inner">
+                <span class="weather__degrees">
+                    Degrees
+                </span>
+                <div class="weather__info">
+                    <p class="weather__city">
+                        City
+                    </p>
+                </div>
+                <p class="weather__mood">
+                    <img class="weather__mood-icon" src="" alt="weather icon">
+                    <span class="weather__mood-text">
+                        Text
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="weather__details">
+        <div class="weather__details-search">
+            <input class="weather__details-input" type="text" placeholder="Location">
+            <button class="weather__details-btn">
+                <img src="images/search.svg" alt="search icon">
+            </button>
+        </div>
+        <div class="weather__details-info">
+            <h3 class="weather__details-info-title">
+                Weather Details
+            </h3>
+            <ul class="weather__details-list loading">
+                <li class="weather__details-item">
+                    Country : <span class="weather__details-item--value cloudy">value</span>
+                </li>
+                <li class="weather__details-item">
+                    Humidity : <span class="weather__details-item--value humidity">value</span>
+                </li>
+                <li class="weather__details-item">
+                    Wind Speed : <span class="weather__details-item--value wind-speed">value</span>
+                </li>
+                <li class="weather__details-item">
+                    Pressure : <span class="weather__details-item--value pressure">value</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
